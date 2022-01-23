@@ -10,7 +10,9 @@ to run this project, need to follow this steps:
 > python etl.py
 
 # Database design
-![This is an image](/ER Diagram.png)
+![This is an image](https://github.com/trickmartini/data-modeling-with-postgres/blob/95b6f6d354c8ab5ece6f838960cf71650cc3a637/ER%20Diagram.png)
+
+
 user table: contains user information as first and last name, gender and level;
 songs table: contains songs informations like title, artist_id, year and duration;
 artist table: contians artists informations like name, location, latitude and longitude;
