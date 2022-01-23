@@ -1,5 +1,5 @@
 # Purpose
-O proposite desta base de dados se importante para fazer análise sobre os streams da plataforma, uma vez que a tabela fato concentra informações sobre as execuções músicas, podendo gerar análises por música, artista, região ou nível de assinatura. 
+The purpose of this database is to carry out analyzes on the platform's streams, since the fact table concentrates information about music performances, being able to generate analyzes by song, artist, region or subscription level.
 
 # How to run
 to run this project, need to follow this steps:
@@ -34,17 +34,17 @@ time table: contains information about the streams time, like start_time, hour, 
     stpe 3: sele just the necessery coluns to insert into artists table
 
 # Project Structure
-data folder: contains the data files (logs and songs)
-create_tables.py : python code that execute the queries from sql_queries.py file to create the database and tables if they don't exists
-etl.ipynb: jupyter notebook used to build and test the etl functions
-etl.py: python file with functions used to execute the ETL process. 
-sql_queries.py: a python file with the  DROP, CREATE and INSERT statements, used by the functions on create_tables.py functions.
-test.ipynb: jupyter notebook used to test if the etl functions worked right.
+1.data folder: contains the data files (logs and songs)
+2.create_tables.py : python code that execute the queries from sql_queries.py file to create the database and tables if they don't exists
+3.etl.ipynb: jupyter notebook used to build and test the etl functions
+4.etl.py: python file with functions used to execute the ETL process. 
+5.sql_queries.py: a python file with the  DROP, CREATE and INSERT statements, used by the functions on create_tables.py functions.
+6.test.ipynb: jupyter notebook used to test if the etl functions worked right.
 
 # Justification
-O esquema da base de dados conta com uma fato e quatro dimensões, sendo quatro dessas tabelas capazes de cruzar informações enquanto a dimensão de tempo não tem chaves necessarias para realizar joins com outras tabelas, sendo usada para gerar métricas própricas de tempos de execução de streams por períodos de tempo.
+The database schema has one fact and four dimensions, with four of these tables capable of crossing information while the time dimension does not have the keys needed to perform joins with other tables, being used to generate metrics of runtimes of streams. for periods of time.
 
-O processo de ETL lê os arquivos jsons presentes na pasta "data", seleciona as colunas necessárias para cada tabela e insere no banco de dados. 
+The ETL process reads the jsons files present in the **data** folder, selects the necessary columns for each table and inserts them into the database.
 
 
 # queryes exemple:
